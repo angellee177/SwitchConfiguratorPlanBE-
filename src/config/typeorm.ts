@@ -18,6 +18,3 @@ const config: DataSourceOptions = {
 }
 
 export const connectionSource = new DataSource(config as DataSourceOptions);
-
-/** Used by TypeORM CLI: `node node_modules/typeorm/cli.js migration:run -d ./dist/src/config/typeorm.js` */
-export default connectionSource;
