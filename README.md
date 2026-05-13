@@ -115,19 +115,15 @@ http://localhost:8000/api-docs
 Example: if `PORT=8000`, use `http://localhost:8000/api-docs`.
 
 ## Postman
+check the postman doc here: [Pasific Component.postman_collection.json](Pasific%20Component.postman_collection.json)
 
-This repository includes a Postman collection you can import:
-
-`**[Pasific Component.postman_collection.json](Pasific%20Component.postman_collection.json)**` — collection name **Pasific Component**.
-
-### Step by step to import the postman doc:
-
-1. Start the API (and ensure the database is migrated and seeded).
-2. In Postman: **Import** → **Upload Files** (or drag-and-drop) → choose `Pasific Component.postman_collection.json` from this project root.
-3. change the `localhost:8000` with your port setup on `.env`
+**Steps to use Postman with this API**:
+1. Open Postman.
+2. Create a new request (or collection) with the base URL `http://localhost:<PORT>/api/v1/switch-plate` (replace `<PORT>` with your `PORT` from `.env`).
+3. Add paths such as `/styles`, `/colours`, `/orientations`, `/mechs`, `/colour-combinations`, `/style-colour-combinations`, or `/config` (all `GET`).
+4. Send requests while the backend is running and the database is migrated and seeded.
 
 ## Additional notes
 
 - **Environment variables**: `.env` is required for PostgreSQL (`DB_TYPE` should be `postgres`, plus `PG_`*) and for the HTTP server (`PORT`).
 - **Reverting migrations**: `npm run migration:revert` rolls back **one** migration at a time (the most recently applied). Run it repeatedly to unwind more than one step, or reset the database in development.
-
