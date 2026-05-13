@@ -1,0 +1,508 @@
+{
+  "info": {
+    "_postman_id": "3475a28a-5dba-4d30-87f8-8744c2d206e5",
+    "name": "Pasific Component",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "8954484"
+  },
+  "item": [
+    {
+      "name": "styles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/styles",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "styles"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/styles",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "styles"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "883"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"373-DfaivUrnZ4gUZ2gtnoANhrVBjXM\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 01:54:35 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate styles fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"d757eedf-b4e4-46db-bf53-f7a053c3711d\",\n            \"name\": \"Vision\",\n            \"code\": \"VSW\",\n            \"supportsCustomColours\": true,\n            \"createdAt\": \"2026-05-13T01:51:06.172Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.172Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"18e3bbac-eea1-4cbe-98cc-ed2534e54551\",\n            \"name\": \"Horizon\",\n            \"code\": \"HSW\",\n            \"supportsCustomColours\": false,\n            \"createdAt\": \"2026-05-13T01:51:06.179Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.179Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"dabfc19c-9c65-4b68-878f-75a9b3fa815f\",\n            \"name\": \"Infinity\",\n            \"code\": \"ISW\",\n            \"supportsCustomColours\": false,\n            \"createdAt\": \"2026-05-13T01:51:06.179Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.179Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"0bd596f7-f66d-43bc-bc2e-7536c2527c20\",\n            \"name\": \"Eclipse\",\n            \"code\": \"ESW\",\n            \"supportsCustomColours\": false,\n            \"createdAt\": \"2026-05-13T01:51:06.188Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.188Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "colours",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/colours",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "colours"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/colours",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "colours"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "415"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"19f-AYyszOLFPNFjEWXGBCSrQySZGkE\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 01:56:23 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate colours fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n            \"name\": \"Black\",\n            \"code\": \"B\",\n            \"createdAt\": \"2026-05-13T01:51:06.194Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.194Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n            \"name\": \"White\",\n            \"code\": \"W\",\n            \"createdAt\": \"2026-05-13T01:51:06.194Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.194Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "orientations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/orientations",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "orientations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/orientations",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "orientations"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "428"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1ac-ZsOwP5vqfea2qLzCl9y4/vTEvwc\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 01:57:04 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate orientations fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"d1faa99e-034a-432c-b350-a4c2a30e0a94\",\n            \"name\": \"Horizontal\",\n            \"code\": \"H\",\n            \"createdAt\": \"2026-05-13T01:51:06.197Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.197Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"159ff30a-a909-4c38-9f8b-43fcc922d2b9\",\n            \"name\": \"Vertical\",\n            \"code\": \"V\",\n            \"createdAt\": \"2026-05-13T01:51:06.197Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.197Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Mech Type",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/mechs",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "mechs"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/orientations",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "orientations"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "428"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1ac-ZsOwP5vqfea2qLzCl9y4/vTEvwc\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 01:57:04 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate orientations fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"d1faa99e-034a-432c-b350-a4c2a30e0a94\",\n            \"name\": \"Horizontal\",\n            \"code\": \"H\",\n            \"createdAt\": \"2026-05-13T01:51:06.197Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.197Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"159ff30a-a909-4c38-9f8b-43fcc922d2b9\",\n            \"name\": \"Vertical\",\n            \"code\": \"V\",\n            \"createdAt\": \"2026-05-13T01:51:06.197Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.197Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Colour Combinations",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/colour-combinations",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "colour-combinations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/colour-combinations",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "colour-combinations"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "971"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3cb-4kSW8CmRWkXa43k26DMpNe50E/M\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 02:10:03 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate colour combinations fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"c11fbc30-de4c-455e-ab0f-3dea4c7bd334\",\n            \"name\": \"Full White\",\n            \"code\": \"WWW\",\n            \"backplateColour\": {\n                \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                \"name\": \"White\",\n                \"code\": \"W\"\n            },\n            \"faceplateColour\": {\n                \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                \"name\": \"White\",\n                \"code\": \"W\"\n            },\n            \"mechColour\": {\n                \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                \"name\": \"White\",\n                \"code\": \"W\"\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"ae8b7dad-5539-4b42-9711-73be1b963c3e\",\n            \"name\": \"Full Black\",\n            \"code\": \"BBB\",\n            \"backplateColour\": {\n                \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                \"name\": \"Black\",\n                \"code\": \"B\"\n            },\n            \"faceplateColour\": {\n                \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                \"name\": \"Black\",\n                \"code\": \"B\"\n            },\n            \"mechColour\": {\n                \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                \"name\": \"Black\",\n                \"code\": \"B\"\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Style Colour Combination",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/api/v1/switch-plate/style-colour-combinations",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "v1",
+            "switch-plate",
+            "style-colour-combinations"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "success",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8000/api/v1/switch-plate/style-colour-combinations",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "v1",
+                "switch-plate",
+                "style-colour-combinations"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "2957"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"b8d-1V4GSZ+V2l65nkS/Dm6DyCMP4Ag\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 13 May 2026 02:10:36 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [
+            {
+              "expires": "Invalid Date",
+              "domain": "",
+              "path": ""
+            }
+          ],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Switch plate style colour combinations fetched successfully\",\n    \"result\": [\n        {\n            \"id\": \"bf25d2ce-5f3f-4f9a-bb48-d08e3a362f2c\",\n            \"style\": {\n                \"id\": \"18e3bbac-eea1-4cbe-98cc-ed2534e54551\",\n                \"name\": \"Horizon\",\n                \"code\": \"HSW\",\n                \"supportsCustomColours\": false\n            },\n            \"colourCombination\": {\n                \"id\": \"c11fbc30-de4c-455e-ab0f-3dea4c7bd334\",\n                \"name\": \"Full White\",\n                \"code\": \"WWW\",\n                \"backplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"faceplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"mechColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n                \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n                \"deletedAt\": null\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.224Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.224Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"8090d78d-8655-421a-b63a-e51a5d16162d\",\n            \"style\": {\n                \"id\": \"0bd596f7-f66d-43bc-bc2e-7536c2527c20\",\n                \"name\": \"Eclipse\",\n                \"code\": \"ESW\",\n                \"supportsCustomColours\": false\n            },\n            \"colourCombination\": {\n                \"id\": \"c11fbc30-de4c-455e-ab0f-3dea4c7bd334\",\n                \"name\": \"Full White\",\n                \"code\": \"WWW\",\n                \"backplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"faceplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"mechColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n                \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n                \"deletedAt\": null\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.224Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.224Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"215b735e-ba79-4aee-8bd9-8b3646ae6520\",\n            \"style\": {\n                \"id\": \"dabfc19c-9c65-4b68-878f-75a9b3fa815f\",\n                \"name\": \"Infinity\",\n                \"code\": \"ISW\",\n                \"supportsCustomColours\": false\n            },\n            \"colourCombination\": {\n                \"id\": \"c11fbc30-de4c-455e-ab0f-3dea4c7bd334\",\n                \"name\": \"Full White\",\n                \"code\": \"WWW\",\n                \"backplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"faceplateColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"mechColour\": {\n                    \"id\": \"a758902d-a3b4-49f2-a8ae-0ee241b3e1e8\",\n                    \"name\": \"White\",\n                    \"code\": \"W\"\n                },\n                \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n                \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n                \"deletedAt\": null\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.224Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.224Z\",\n            \"deletedAt\": null\n        },\n        {\n            \"id\": \"6ef7e252-e257-4b78-86a3-df3a9bb46c12\",\n            \"style\": {\n                \"id\": \"dabfc19c-9c65-4b68-878f-75a9b3fa815f\",\n                \"name\": \"Infinity\",\n                \"code\": \"ISW\",\n                \"supportsCustomColours\": false\n            },\n            \"colourCombination\": {\n                \"id\": \"ae8b7dad-5539-4b42-9711-73be1b963c3e\",\n                \"name\": \"Full Black\",\n                \"code\": \"BBB\",\n                \"backplateColour\": {\n                    \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                    \"name\": \"Black\",\n                    \"code\": \"B\"\n                },\n                \"faceplateColour\": {\n                    \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                    \"name\": \"Black\",\n                    \"code\": \"B\"\n                },\n                \"mechColour\": {\n                    \"id\": \"e7bd362c-8017-40f3-8841-28eb5e7b84e9\",\n                    \"name\": \"Black\",\n                    \"code\": \"B\"\n                },\n                \"createdAt\": \"2026-05-13T01:51:06.215Z\",\n                \"updatedAt\": \"2026-05-13T01:51:06.215Z\",\n                \"deletedAt\": null\n            },\n            \"createdAt\": \"2026-05-13T01:51:06.224Z\",\n            \"updatedAt\": \"2026-05-13T01:51:06.224Z\",\n            \"deletedAt\": null\n        }\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}
