@@ -1,3 +1,4 @@
+import "reflect-metadata";
 import { config as dotenvConfig } from 'dotenv';
 import { join } from "path";
 import { DataSource, DataSourceOptions } from "typeorm";
@@ -12,8 +13,11 @@ const config: DataSourceOptions = {
     password: process.env.PG_PASSWORD,
     database: process.env.PG_DB,
     entities: [join(__dirname, '/../**/*.entity{.ts,.js}')], // Handles src and dist paths
-    migrations: [join(__dirname, '/../../database/migrations/**/*{.ts,.js}')],
+    migrations: [join(__dirname, '/../database/migrations/**/*{.ts,.js}')],
     synchronize: false,
 }
 
 export const connectionSource = new DataSource(config as DataSourceOptions);
+
+/** Used by TypeORM CLI: `node node_modules/typeorm/cli.js migration:run -d ./dist/src/config/typeorm.js` */
+export default connectionSource;
