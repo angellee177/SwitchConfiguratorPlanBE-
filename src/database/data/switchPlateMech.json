@@ -1,0 +1,9 @@
+[
+  { "name": "10A Switch", "code": "10", "supportsColour": true },
+  { "name": "16A Switch", "code": "16", "supportsColour": true },
+  { "name": "USB A", "code": "USBA", "supportsColour": false },
+  { "name": "USB A/C", "code": "USBAC", "supportsColour": false },
+  { "name": "Satellite", "code": "SAT", "supportsColour": false },
+  { "name": "TV", "code": "TV", "supportsColour": false },
+  { "name": "Data", "code": "DATA", "supportsColour": false }
+]

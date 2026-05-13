@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Full White",
+    "code": "WWW",
+    "backplateColourCode": "W",
+    "faceplateColourCode": "W",
+    "mechColourCode": "W"
+  },
+  {
+    "name": "Full Black",
+    "code": "BBB",
+    "backplateColourCode": "B",
+    "faceplateColourCode": "B",
+    "mechColourCode": "B"
+  }
+]

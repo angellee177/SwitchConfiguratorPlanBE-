@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Vision",
+    "code": "VSW",
+    "supportsCustomColours": true
+  },
+  {
+    "name": "Horizon",
+    "code": "HSW",
+    "supportsCustomColours": false
+  },
+  {
+    "name": "Infinity",
+    "code": "ISW",
+    "supportsCustomColours": false
+  },
+  {
+    "name": "Eclipse",
+    "code": "ESW",
+    "supportsCustomColours": false
+  }
+]
