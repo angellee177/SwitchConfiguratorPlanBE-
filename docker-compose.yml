@@ -1,0 +1,36 @@
+# Optional: copy .env.example to .env and set values. Defaults below work for local Docker.
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: ${PG_USER:-switchplate}
+      POSTGRES_PASSWORD: ${PG_PASSWORD:-switchplate}
+      POSTGRES_DB: ${PG_DB:-switchplate}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PUBLISH_PORT:-5433}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PG_USER:-switchplate} -d ${PG_DB:-switchplate}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  api:
+    build: .
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    environment:
+      PORT: ${PORT:-8000}
+      DB_TYPE: ${DB_TYPE:-postgres}
+      PG_HOST: db
+      PG_PORT: "5432"
+      PG_USER: ${PG_USER:-switchplate}
+      PG_PASSWORD: ${PG_PASSWORD:-switchplate}
+      PG_DB: ${PG_DB:-switchplate}
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:
